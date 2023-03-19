@@ -1,0 +1,92 @@
+.modal-sec{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.modal{
+    margin-top: 20px;
+    /* color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    /* color: aliceblue; */
+    
+    
+}
+.modal-con{
+    background-color: rgb(210, 212, 214);
+    width: 30%;
+    border-radius: 10px;
+    min-width: 350px;
+    position: relative;
+    animation: slide-down ease .5s;
+    /* border: 1px solid black; */
+    padding: 10px 15px;
+    margin-top: 5px;
+    /* background-color: beige; */
+    box-shadow: 5px 10px 15px -5px  rgb(5, 5, 5);
+}
+/* @keyframes slide-down{
+    0%{
+        transform: translateY(-30rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+} */
+@keyframes slide-down {
+    0%{
+        transform: translateY(-30rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.close-icon{
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.info-icon{
+    position: absolute;
+    top: 35px;
+    left: 60px;
+    padding: 2px;
+}
+.modal-footer{
+    display: flex;
+   float: right;
+  
+}
+.btn1{
+    cursor: pointer;
+    margin-right: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: azure;
+    height: 25px;
+
+}
+.btn2{
+    cursor: pointer;
+    background-color: rgba(45, 74, 223, 0.936);
+    border: none;
+    color: aliceblue;
+    border-radius: 5px;
+
+}
